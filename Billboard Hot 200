@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # === PARAMETERS TO EDIT ===
-artist_name = 'Drake'  # ← enter the artist name here
+artist_name = 'Taylor Swift'  # ← enter the artist name here
 
 # Direct path with your username
 file_path = '/Users/prangonbarua/Desktop/billboard200.csv'
