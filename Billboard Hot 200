@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # === PARAMETERS TO EDIT ===
-artist_name = 'Taylor Swift'  # ← enter the artist name here
+artist_name = 'Drake'  # ← enter the artist name here
 
 # Direct path with your username
 file_path = '/Users/prangonbarua/Desktop/billboard200.csv'
@@ -62,8 +62,8 @@ if required_cols.issubset(data.columns):
         # Save to Excel
         pivot_table.to_excel(output_file)
 
-        print(f"✅ Done! Data for '{artist_name.title()}' saved to: {output_file}")
+        print(f"[SUCCESS] Done! Data for '{artist_name.title()}' saved to: {output_file}")
     else:
-        print(f"⚠️ No results found for artist: {artist_name}")
+        print(f"[WARNING] No results found for artist: {artist_name}")
 else:
-    print("❌ Missing required columns. Found columns:", data.columns.tolist())
+    print("[ERROR] Missing required columns. Found columns:", data.columns.tolist())
